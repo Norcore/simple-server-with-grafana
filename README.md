@@ -6,4 +6,6 @@ Please note that if you are changing the name in the service/deployment you will
 
 If you are not changing any configurations all you have to do after running install.sh is opening localhost:3000 (grafana) and localhost:5000 (application).
 
+The default credentials for this Helm prometheus-grafana installation is: admin/prom-operator.
+
 

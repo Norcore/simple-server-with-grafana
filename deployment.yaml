@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-server-with-grafana-deployment
+  labels:
+    app: simple-server-with-grafana-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: simple-server-with-grafana-app
+  template:
+    metadata:
+      labels:
+        app: simple-server-with-grafana-app
+    spec:
+      containers:
+      - name: simple-server-with-grafana-app-container
+        image: norcore/tinker-tailor:latest
+        ports:
+        - containerPort: 5000

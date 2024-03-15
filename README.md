@@ -4,9 +4,7 @@
 
 Please note that if you are changing the name in the service/deployment you will also have to change the name of your deployments in install.sh.
 
-If you are not changing any configurations all you have to do after running install.sh is opening localhost:3000 (grafana) and localhost:5000 (application).
-
-This is not necessary needed for functionality, but if you wish to access prometheus directly you can run "kubectl port-forward svc/prometheus-operator-kube-p-prometheus 9090:9090 -n default" to access prometheus in the browser (localhost:9090).
+If you are not changing any configurations all you have to do after running install.sh is opening localhost:3000 (grafana), localhost:9090(prometheus) and localhost:5000 (application).
 
 The default credentials for this Helm prometheus-grafana installation is: admin/prom-operator.
 
